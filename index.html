@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>DesNet</title>
+
+    <meta name="description" content="DesNet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="https://github.com/tuan-lv/tuan-lv.github.io/blob/master/static/images/DesNet/avenue.gif">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="360">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tuan-lv.github.io/desnet/"/>
+    <meta property="og:title" content="DesNet" />
+    <meta property="og:description" content="A Deep and Efficient Spatial-temporal Network for Video Anomaly Detection." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="DesNet" />
+    <meta name="twitter:title" content="DesNet" />
+    <meta name="twitter:description" content="A Deep and Efficient Spatial-temporal Network for Video Anomaly Detection." />
+    <meta name="twitter:image" content="https://tuan-lv.github.io/desnet/"/>
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                A Deep and Efficient Spatial-temporal Network for Video Anomaly Detection</br>
+                <small>
+                    arXiv 2021
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://tuan-lv.github.io/">
+                          Viet-Tuan Le
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://home.sejong.ac.kr/~ykim/">
+                            Yong-Guk Kim
+                        </a>
+                    </li>                    
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        Department of Computer Engineering
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        Sejong University, Seoul, Korea
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+        <!--<div class="row justify-content-center">-->
+                <div class="col-md-8 col-sm-8 col-8 col-md-offset-2 col-sm-offset-2 text-center">                
+                <!--<div class="col-12">-->
+                    <ul class="nav nav-pills nav-justified">
+                        <li></li>
+                        <li>
+                            <a href="#">
+                            <image src="img/bake_paper_image.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tuan-lv/desnet">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>   
+                        <li></li>                     
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">                
+                <div class="text-center">
+                    <div >
+                        <a href="img/shanghai/shanghai_curve.gif" target="_blank">
+                            <image style="border: 2px solid rgb(201, 196, 196);" src="img/shanghai/shanghai_curve.gif" width="100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <!-- <image src="img/rays.jpg" class="img-responsive" alt="overview"><br> -->
+                <p class="text-justify">
+                    Automatic anomaly detection is an crucial task in video surveillance systems for improving public safety. Many approaches used two-stream networks, which included a spatial stream and a temporal stream to exploit both spatial and temporal information in videos. However, optical flow requires a heavy computation in temporal stream. In this paper, we introduce a <strong>d</strong>eep and <strong>e</strong>fficient <strong>s</strong>patial-temporal <strong>Net</strong>work (<strong>DesNet</strong>) for video anomaly detection. Features of video frames are exploited both spatial and temporal information at the same time. Furthermore, the contextual dependencies of features are computed by  spatial-channel attention. We evaluate the proposed DESNet on three benchmark datasets: USCD Ped2, CUHK Avenue and ShanghaiTech. Experiment results show that DESNet achieves the state-of-the-art performance with 97.4\%, 86.6\% and 73.6\% on USCD Ped2, CUHK Avenue and ShanghaiTech, respectively. The project page of this paper can be found at <a href="https://tuan-lv.github.io/desnet/">https://tuan-lv.github.io/desnet/</a>.
+                </p>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" id="demos">
+                <h3>
+                    Anomaly Score
+                </h3>
+                <h4>
+                    Ped2
+                </h4>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <a href="img/ped2/ped2_curve.png" target="_blank">
+                            <image src="img/ped2/ped2_curve.png" width="100%">
+                                <h4><strong>Anomaly scores of Video 2 in UCSD Ped2 Dataset</strong></h4>
+                        </a>
+                        
+                    </ul>
+                </div>
+        </div>       
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" id="demos">
+                <h4>
+                    Avenue
+                </h4>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <a href="img/avenue/ave_curve.png" target="_blank">
+                        <image src="img/avenue/ave_curve.png" width="100%">
+                            <h4><strong>Anomaly scores of Video 2 in CUHK Avenue Dataset</strong></h4>
+                    </a>
+                    
+                </ul>
+            </div>
+    </div> 
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" id="demos">
+                <h4>
+                    ShanghaiTech
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <a href="img/shanghai/sha_curve.png" target="_blank">
+                            <image src="img/shanghai/sha_curve.png" width="100%">
+                                <h4><strong>Anomaly scores of Video 01_0063 in ShanghaiTech Dataset</strong></h4>
+                        </a>
+                        <!--
+                        <li>
+                            <a href="#">
+                            <image src="img/avenue/000.jpg" width="130px">
+                                <h4><strong>Frame 1</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <image src="img/avenue/001.jpg" width="130px">
+                                <h4><strong>Frame 2</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                              <image src="img/avenue/002.jpg" width="130px">
+                                <h4><strong>Frame 3</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                              <image src="img/avenue/003.jpg" width="130px">
+                                <h4><strong>Frame 4</strong></h4>
+                            </a>
+                        </li>
+                    -->
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{le2021a,
+    title={A Deep and Efficient Spatial-temporal Network for Video Anomaly Detection},
+    author={Viet-Tuan Le and Yong-Guk Kim},
+    journal={arXiv},
+    year={2021}
+}
+                    </textarea>
+                </div>
+            </div>
+        </div>
+<!--
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+              <h2 class="title">Citation</h2>
+                <pre>
+@article{le2021a,
+    title={A Deep and Efficient Spatial-temporal Network for Video Anomaly Detection},
+    author={Tuan Le-Viet and Yong-Guk Kim},
+    journal={arXiv},
+    year={2021}
+}
+                </pre>
+            </div>
+          </section>
+-->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank...
+                    <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -2,15 +2,14 @@
 
 This is the official code for DesNet: Attention-based Residual Autoencoder for Video Anomaly Detection.
 
- * [Project Page](https://vt-le.github.io/desnet/)
- * [Paper](#)
- * [Video](https://youtu.be/ghwkkJioeBc)
- 
+### [Project](https://vt-le.github.io/desnet/) | [Video](https://youtu.be/ghwkkJioeBc) | [Paper](#)
+  
+ <img src='img/shanghai/shanghai_curve_full.gif' align="center" width="50%">
  
 ## Prerequisites
-  Linux or macOS
-  Python 3
-  PyTorch 1.7.0
+  * Linux or macOS
+  * Python 3
+  * PyTorch 1.7.0
 
 ## Setup
 The code can be run under any environment with Python 3.8 and above.
@@ -69,3 +68,9 @@ If you find our work useful for your research, please consider citing:
   year      = {2021},
 }
 ```
+
+## Contact
+For any question, please contact
+
+    Viet-Tuan Le: tuanlv@sju.ac.kr
+

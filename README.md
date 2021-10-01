@@ -4,7 +4,7 @@ This is the official code for DesNet: Attention-based Residual Autoencoder for V
 
 ### [Project](https://vt-le.github.io/desnet/) | [Video](https://youtu.be/ghwkkJioeBc) | [Paper](#)
   
- <img src='img/shanghai/shanghai_curve_full.gif' align="center" width="50%">
+ <img src='img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
  
 ## Prerequisites
   * Linux or macOS
@@ -12,7 +12,7 @@ This is the official code for DesNet: Attention-based Residual Autoencoder for V
   * PyTorch 1.7.0
 
 ## Setup
-The code can be run under any environment with Python 3.8 and above.
+The code can be run with Python 3.8 and above.
 
 Install the required packages:
 

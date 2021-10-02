@@ -70,7 +70,7 @@ If you find our work useful for your research, please consider citing:
 ```
 
 ## Contact
-For any question, please contact
+For any question, please file an issue or contact:
 
     Viet-Tuan Le: tuanlv@sju.ac.kr
 

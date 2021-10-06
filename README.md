@@ -39,7 +39,7 @@ ShanghaiTech Campus        | [link][3]
 
 After preparing a dataset, you can test the dataset by running:
     
-    python train.py \
+    python test.py \
         --cfg /path/to/config/file \
         --model-file /path/to/pre-trained/model \
         GPUS [0]        

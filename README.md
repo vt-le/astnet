@@ -1,6 +1,6 @@
 # DesNet: Attention-based Residual Autoencoder for Video Anomaly Detection
 
-This is the official code for DesNet: Attention-based Residual Autoencoder for Video Anomaly Detection.
+This is the official code for **Attention-based Residual Autoencoder for Video Anomaly Detection**.
 
 ### [Project](https://vt-le.github.io/desnet/) | [Video](https://youtu.be/ghwkkJioeBc) | [Paper](#)
   
@@ -70,7 +70,7 @@ If you find our work useful for your research, please consider citing:
 ```
 
 ## Contact
-For any question, please file an issue or contact:
+For any question, please file an [issue](https://github.com/vt-le/desnet/issues) or contact:
 
     Viet-Tuan Le: tuanlv@sju.ac.kr
 

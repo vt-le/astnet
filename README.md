@@ -45,6 +45,11 @@ After preparing a dataset, you can test the dataset by running:
         GPUS [0]        
  
 ## Datasets
+* [UCSD Ped2](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html)
+* [CUHK Avenue](http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html)
+* [ShanghaiTech Campus](https://svip-lab.github.io/dataset/campus_dataset.html)
+
+
 A dataset is a directory with the following structure:
 
     dataset

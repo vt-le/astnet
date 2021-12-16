@@ -1,8 +1,8 @@
-# DesNet: Attention-based Residual Autoencoder for Video Anomaly Detection
+# ASTNet: Attention-based Residual Autoencoder for Video Anomaly Detection
 
 This is the official code for **Attention-based Residual Autoencoder for Video Anomaly Detection**.
 
-### [Project](https://vt-le.github.io/desnet/) | [Video](https://youtu.be/ghwkkJioeBc) | [Paper](#)
+### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/ghwkkJioeBc) | [Paper](#)
   
  <img src='img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
  
@@ -20,8 +20,8 @@ Install the required packages:
     
 Clone this repo:
 
-    git clone https://github.com/vt-le/desnet.git
-    cd desnet
+    git clone https://github.com/vt-le/astnet.git
+    cd astnet
 
 ## Testing
 Please first download the pre-trained model
@@ -64,17 +64,17 @@ A dataset is a directory with the following structure:
 ## Citing
 If you find our work useful for your research, please consider citing:
 ```BibTeX
-@article{le2021attention
+@article{le2022attention
   author    = {Viet-Tuan, Le 
                and Yong-Guk, Kim},
   title     = {Attention-based Residual Autoencoder for Video Anomaly Detection},
   journal   = {...},
-  year      = {2021},
+  year      = {2022},
 }
 ```
 
 ## Contact
-For any question, please file an [issue](https://github.com/vt-le/desnet/issues) or contact:
+For any question, please file an [issue](https://github.com/vt-le/astnet/issues) or contact:
 
     Viet-Tuan Le: tuanlv@sju.ac.kr
 

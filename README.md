@@ -26,7 +26,7 @@ Clone this repo:
 ## Testing
 Please first download the pre-trained model
 
-Dataset          | Pre-trained Mode |
+Dataset          | Pretrained Model |
 -----------------|:--------:
 UCSD Ped2   | [link][1]
 CUHK Avenue  | [link][2]

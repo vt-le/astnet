@@ -2,7 +2,7 @@
 
 This is the official code for **Attention-based Residual Autoencoder for Video Anomaly Detection**.
 
-### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/ghwkkJioeBc) | [Paper](#)
+### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/XOzXwKVKX-Y) | [Paper](#)
   
  <img src='img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
  

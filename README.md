@@ -28,13 +28,12 @@ Please first download the pre-trained model
 
 Dataset          | Pretrained Model |
 -----------------|:--------:
-UCSD Ped2   | [link][1]
-CUHK Avenue  | [link][2]
-ShanghaiTech Campus        | [link][3]
+UCSD Ped2   | [github][1] / drive
+CUHK Avenue  | github / drive
+ShanghaiTech Campus        | github / drive
 
 [1]: https://github.com/vt-le/storage/raw/wresnet/epoch_60.pth
-[2]: #
-[3]: #
+
 
 
 After preparing a dataset, you can test the dataset by running:

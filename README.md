@@ -32,7 +32,7 @@ UCSD Ped2   | [link][1]
 CUHK Avenue  | [link][2]
 ShanghaiTech Campus        | [link][3]
 
-[1]: #
+[1]: https://github.com/vt-le/storage/blob/wresnet/epoch_60.pth
 [2]: #
 [3]: #
 

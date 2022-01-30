@@ -28,9 +28,9 @@ Please first download the pre-trained model
 
 Dataset          | Pretrained Model |
 -----------------|:--------:
-UCSD Ped2   | [github][1] / drive[4]
-CUHK Avenue  | [github][2] / drive[5]
-ShanghaiTech Campus        | [github][3] / drive[6]
+UCSD Ped2   | [github][1] / [drive][4]
+CUHK Avenue  | [github][2] / [drive][5]
+ShanghaiTech Campus        | [github][3] / [drive][6]
 
 [1]: https://github.com/vt-le/storage/raw/wresnet/ped2.pth
 [2]: https://github.com/vt-le/storage/raw/wresnet/avenue.pth

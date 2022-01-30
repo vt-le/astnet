@@ -1,6 +1,6 @@
 # ASTNet: Attention-based Residual Autoencoder for Video Anomaly Detection
 
-This is the official code for **Attention-based Residual Autoencoder for Video Anomaly Detection**.
+This is the official implementation of **Attention-based Residual Autoencoder for Video Anomaly Detection**.
 
 ### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/XOzXwKVKX-Y) | [Paper](#)
   
@@ -29,10 +29,12 @@ Please first download the pre-trained model
 Dataset          | Pretrained Model |
 -----------------|:--------:
 UCSD Ped2   | [github][1] / drive
-CUHK Avenue  | github / drive
-ShanghaiTech Campus        | github / drive
+CUHK Avenue  | [github][2] / drive
+ShanghaiTech Campus        | [github][3] / drive
 
-[1]: https://github.com/vt-le/storage/raw/wresnet/epoch_60.pth
+[1]: https://github.com/vt-le/storage/raw/wresnet/ped2.pth
+[2]: https://github.com/vt-le/storage/raw/wresnet/avenue.pth
+[3]: https://github.com/vt-le/storage/raw/wresnet/shanghai.pth
 
 
 

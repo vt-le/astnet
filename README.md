@@ -12,7 +12,7 @@ This is the official implementation of **Attention-based Residual Autoencoder fo
   * PyTorch 1.7.0
 
 ## Setup
-The code can be run with Python 3.8 and above.
+The code can be run with Python 3.6 and above.
 
 Install the required packages:
 
@@ -21,7 +21,7 @@ Install the required packages:
 Clone this repo:
 
     git clone https://github.com/vt-le/astnet.git
-    cd astnet
+    cd astnet/astnet
 
 ## Testing
 Please first download the pre-trained model
@@ -43,10 +43,10 @@ ShanghaiTech Campus        | [github][3] / [drive][6]
 
 After preparing a dataset, you can test the dataset by running:
     
-    python test.py \
+    python astnet.py \
         --cfg /path/to/config/file \
         --model-file /path/to/pre-trained/model \
-        GPUS [0]        
+        GPUS [{GPU_index}]        
  
 ## Datasets
 * <a href="http://www.svcl.ucsd.edu/projects/anomaly/dataset.html" target="_blank">UCSD Ped2</a>
@@ -57,11 +57,11 @@ A dataset is a directory with the following structure:
 
     dataset
         ├── train
-        │   └── ${video_id}
-        |       └──${frame_id}.jpg
+        │   └── ${video_id}$
+        |       └──${frame_id}$.jpg
         ├── test
-        │   └── ${video_id}
-        |       └──${frame_id}.jpg
+        │   └── ${video_id}$
+        |       └──${frame_id}$.jpg
         └── $dataset$.mat
 
  
@@ -69,11 +69,11 @@ A dataset is a directory with the following structure:
 If you find our work useful for your research, please consider citing:
 ```BibTeX
 @article{le2022attention
-  author    = {Viet-Tuan, Le 
-               and Yong-Guk, Kim},
+  author    = {Viet-Tuan, Le and Yong-Guk, Kim},
   title     = {Attention-based Residual Autoencoder for Video Anomaly Detection},
-  journal   = {...},
+  journal   = {Applied Intelligence},
   year      = {2022},
+  publisher = {Springer}
 }
 ```
 

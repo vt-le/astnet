@@ -21,7 +21,7 @@ Install the required packages:
 Clone this repo:
 
     git clone https://github.com/vt-le/astnet.git
-    cd astnet/astnet
+    cd astnet
 
 ## Testing
 Please first download the pre-trained model

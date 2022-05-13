@@ -7,7 +7,7 @@ This is the official implementation of **Attention-based Residual Autoencoder fo
  <img src='static/img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
 
 ## Updates
-* [4/21/2022] Code of ASTNet is released!
+* [4/21/2022] Code of [ASTNet](https://vt-le.github.io/astnet/) is released!
 
 ## Prerequisites
   * Linux or macOS

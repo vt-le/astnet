@@ -2,10 +2,13 @@
 
 This is the official implementation of **Attention-based Residual Autoencoder for Video Anomaly Detection**.
 
-### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/XOzXwKVKX-Y) | [Paper](#)
+### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/XOzXwKVKX-Y) | [Paper](http://dx.doi.org/10.1007/s10489-022-03613-1)
   
  <img src='static/img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
- 
+
+## Updates
+* [4/21/2022] Code of ASTNet is released!
+
 ## Prerequisites
   * Linux or macOS
   * Python 3

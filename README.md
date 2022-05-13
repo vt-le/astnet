@@ -4,7 +4,7 @@ This is the official implementation of **Attention-based Residual Autoencoder fo
 
 ### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/XOzXwKVKX-Y) | [Paper](#)
   
- <img src='img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
+ <img src='static/img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
  
 ## Prerequisites
   * Linux or macOS

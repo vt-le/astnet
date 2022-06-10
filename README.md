@@ -72,12 +72,13 @@ A dataset is a directory with the following structure:
 ## Citing
 If you find our work useful for your research, please consider citing:
 ```BibTeX
-@article{le2022attention
-  author    = {Viet-Tuan, Le and Yong-Guk, Kim},
-  title     = {Attention-based Residual Autoencoder for Video Anomaly Detection},
-  journal   = {Applied Intelligence},
-  year      = {2022},
-  publisher = {Springer}
+@article{le2022attention,
+  title={Attention-based residual autoencoder for video anomaly detection},
+  author={Le, Viet-Tuan and Kim, Yong-Guk},
+  journal={Applied Intelligence},
+  pages={1--15},
+  year={2022},
+  publisher={Springer}
 }
 ```
 

@@ -88,6 +88,7 @@ For any question, please file an [issue](https://github.com/vt-le/astnet/issues)
     Viet-Tuan Le: tuanlv@sju.ac.kr
 
 ## Other Links
-> **Transfomer for Video Anomaly Detection**: See [PySTformer: Pyramidal Spatio-Temporal Transformer for Anomaly Detection in Aerial and Surveillance Videos](https://github.com/vt-le/pystformer).
+> **Transfomer for Video Anomaly Detection**: See [HSTforU: Anomaly Detection in Aerial and Ground-based Videos with Hierarchical Spatio-Temporal Transformer for U-net
+](https://github.com/vt-le/HSTforU).
 
 

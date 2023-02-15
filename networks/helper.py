@@ -117,3 +117,77 @@ class TemporalShift(nn.Module):
             out[:, :, 2 * fold:] = x[:, :, 2 * fold:]  # not shift
 
         return out.view(bz, nt, h, w)
+
+
+class RCAB(nn.Module):
+    def __init__(self, in_feat, out_feat, kernel_size, reduction,
+            norm=False, act=nn.ReLU(True), downscale=False, return_ca=False):
+        super(RCAB, self).__init__()
+
+        self.body = nn.Sequential(
+            # ConvNorm(in_feat, out_feat, kernel_size, stride=2 if downscale else 1, norm=norm),
+            ConvNorm(in_feat, out_feat, kernel_size, stride=1, norm=norm),
+            act,
+            ConvNorm(out_feat, out_feat, kernel_size, stride=1, norm=norm),
+            # CALayer(out_feat, reduction)
+        )
+        self.CA = CALayer(out_feat, reduction)
+        # self.SA = SpatialAttention2()
+        self.sig = nn.Sigmoid()
+
+        self.downscale = downscale
+        if downscale:
+            self.downConv = nn.Conv2d(in_feat, out_feat, kernel_size=3, stride=1, padding=1)
+        self.return_ca = return_ca
+
+    def forward(self, x):
+        res = x
+        out = self.body(x)
+        ca = self.CA(out)
+        # sa = self.SA(out)
+
+        if self.downscale:
+            res = self.downConv(res)
+
+        return res + (out * self.sig(ca))
+
+
+class ConvNorm(nn.Module):
+    def __init__(self, in_feat, out_feat, kernel_size, stride=1, norm=False):
+        super(ConvNorm, self).__init__()
+
+        reflection_padding = kernel_size // 2
+        self.reflection_pad = nn.ReflectionPad2d(reflection_padding)
+        self.conv = nn.Conv2d(in_feat, out_feat, stride=stride, kernel_size=kernel_size, bias=True)
+
+        self.norm = norm
+        if norm == 'IN':
+            self.norm = nn.InstanceNorm2d(out_feat, track_running_stats=True)
+        elif norm == 'BN':
+            self.norm = nn.BatchNorm2d(out_feat)
+
+    def forward(self, x):
+        out = self.reflection_pad(x)
+        out = self.conv(out)
+        if self.norm:
+            out = self.norm(out)
+        return out
+
+
+class CALayer(nn.Module):
+    def __init__(self, channel, reduction=16):
+        super(CALayer, self).__init__()
+        # global average pooling: feature --> point
+        self.avg_pool = nn.AdaptiveAvgPool2d(1)
+        # feature channel downscale and upscale --> channel weight
+        self.conv_du = nn.Sequential(
+            nn.Conv2d(channel, channel // reduction, 1, padding=0, bias=True),
+            nn.ReLU(inplace=True),
+            nn.Conv2d(channel // reduction, channel, 1, padding=0, bias=True),
+            # nn.Sigmoid()
+        )
+
+    def forward(self, x):
+        y = self.avg_pool(x)
+        y = self.conv_du(y)
+        return y

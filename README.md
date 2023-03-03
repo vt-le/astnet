@@ -1,6 +1,6 @@
 # ASTNet: Attention-based Residual Autoencoder for Video Anomaly Detection
 
-This is the official implementation of **Attention-based Residual Autoencoder for Video Anomaly Detection**.
+This is the official implementation of **[Attention-based Residual Autoencoder for Video Anomaly Detection](ttps://doi.org/10.1007/s10489-022-03613-1)**.
 
 > **Transfomer for Video Anomaly Detection**: See [HSTforU: Anomaly Detection in Aerial and Ground-based Videos with Hierarchical Spatio-Temporal Transformer for U-net
 ](https://github.com/vt-le/HSTforU).

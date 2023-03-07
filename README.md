@@ -3,7 +3,7 @@
 This is the official implementation of **[Attention-based Residual Autoencoder for Video Anomaly Detection](https://doi.org/10.1007/s10489-022-03613-1)**.
 
 > **Transfomer for Video Anomaly Detection**: See [HSTforU: Anomaly Detection in Aerial and Ground-based Videos with Hierarchical Spatio-Temporal Transformer for U-net
-](https://github.com/vt-le/HSTforU).
+](https://vt-le.github.io/HSTforU/).
 
 ### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/XOzXwKVKX-Y) | [Paper](http://dx.doi.org/10.1007/s10489-022-03613-1)
   

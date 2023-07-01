@@ -10,6 +10,7 @@ This is the official implementation of **[Attention-based Residual Autoencoder f
  <img src='static/img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
 
 ## Updates
+* [6/01/2023] Training script of ASTNet is released.
 * [5/25/2022] [ASTNet](https://vt-le.github.io/astnet/) is available online.
 * [4/21/2022] Code of [ASTNet](https://vt-le.github.io/astnet/) is released!
 
@@ -30,7 +31,9 @@ Clone this repo:
     git clone https://github.com/vt-le/astnet.git
     cd astnet
 
-## Testing
+## Training AST
+
+## Evaluation
 Please first download the pre-trained model
 
 Dataset          | Pretrained Model |
@@ -42,9 +45,9 @@ ShanghaiTech Campus        | [github][3] / [drive][6]
 [1]: https://github.com/vt-le/storage/raw/wresnet/ped2.pth
 [2]: https://github.com/vt-le/storage/raw/wresnet/avenue.pth
 [3]: https://github.com/vt-le/storage/raw/wresnet/shanghai.pth
-[4]: https://drive.google.com/file/d/1pxX_lDeB6RNoEdtylKwN5eRD_E8_Bl54/view?usp=sharing
-[5]: https://drive.google.com/file/d/1NW_x2g8UbtWJHPuniroEt2NEbR03W1XQ/view?usp=sharing
-[6]: https://drive.google.com/file/d/1efayfuAsXZUEE4S0_Kq4yRFi_JirON9T/view?usp=sharing
+[4]: https://drive.google.com/file/d/1dmDVyAkI0FiEex3aEHDQMdgDFeBtH1Fo/view?usp=sharing
+[5]: https://drive.google.com/file/d/1EtHqDiq3tDikgpXCm6LltWzgSnSvyH1U/view?usp=sharing
+[6]: https://drive.google.com/file/d/1SwUGiwyhEUPIk8CTSS_5ZDjg3Idi7CJS/view?usp=sharing
 
 
 

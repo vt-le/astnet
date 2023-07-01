@@ -29,7 +29,7 @@ Install the required packages:
 Clone this repo:
 
     git clone https://github.com/vt-le/astnet.git
-    cd astnet
+    cd ASTNet/ASTNet
 
 ## Data preparation
 We evaluate `ASTNet` on:

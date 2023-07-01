@@ -10,7 +10,7 @@ This is the official implementation of **[Attention-based Residual Autoencoder f
  <img src='static/img/shanghai/shanghai_curve_full.gif' align="center" width="70%">
 
 ## Updates
-* [6/01/2023] Training script of ASTNet is released.
+* [6/01/2023] Training script of [ASTNet](https://vt-le.github.io/astnet/) is released.
 * [5/25/2022] [ASTNet](https://vt-le.github.io/astnet/) is available online.
 * [4/21/2022] Code of [ASTNet](https://vt-le.github.io/astnet/) is released!
 
@@ -31,7 +31,64 @@ Clone this repo:
     git clone https://github.com/vt-le/astnet.git
     cd astnet
 
-## Training AST
+## Data preparation
+We evaluate `ASTNet` on:
+* <a href="http://www.svcl.ucsd.edu/projects/anomaly/dataset.html" target="_blank">UCSD Ped2</a>
+* <a href="http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html" target="_blank">CUHK Avenue</a>
+* <a href="https://svip-lab.github.io/dataset/campus_dataset.html" target="_blank">ShanghaiTech Campus</a>
+
+A dataset is a directory with the following structure:
+  ```bash
+  $ tree data
+  ped2/avenue
+  ├── training
+  │   └── frames
+  │       ├── ${video_1}$
+  │       │   ├── 000.jpg
+  │       │   ├── 001.jpg
+  │       │   └── ...
+  │       ├── ${video_2}$
+  │       │   ├── 00.jpg
+  │       │   └── ...
+  │       └── ...
+  └── testing
+  │   └── frames
+  │       ├── ${video_1}$
+  │       │   ├── 000.jpg
+  │       │   ├── 001.jpg
+  │       │   └── ...
+  │       ├── ${video_2}$
+  │       │   ├── 000.jpg
+  │       │   └── ...
+  │       └── ...
+  └── ped2/avenue.mat
+  
+  shanghaitech
+  ├── training
+  │   └── frames
+  │       ├── ${video_1}$
+  │       │   ├── 000.jpg
+  │       │   ├── 001.jpg
+  │       │   └── ...
+  │       ├── ${video_2}$
+  │       │   ├── 00.jpg
+  │       │   └── ...
+  │       └── ...
+  └── testing
+  │   └── frames
+  │       ├── ${video_1}$
+  │       │   ├── 000.jpg
+  │       │   ├── 001.jpg
+  │       │   └── ...
+  │       ├── ${video_2}$
+  │       │   ├── 000.jpg
+  │       │   └── ...
+  │       └── ...
+  └── test_frame_mask
+      ├── 01_0014.npy
+      ├── 01_0015.npy
+      └── ...
+  ```
 
 ## Evaluation
 Please first download the pre-trained model
@@ -40,7 +97,7 @@ Dataset          | Pretrained Model |
 -----------------|:--------:
 UCSD Ped2   | [github][1] / [drive][4]
 CUHK Avenue  | [github][2] / [drive][5]
-ShanghaiTech Campus        | [github][3] / [drive][6]
+ShanghaiTech        | [github][3] / [drive][6]
 
 [1]: https://github.com/vt-le/storage/raw/wresnet/ped2.pth
 [2]: https://github.com/vt-le/storage/raw/wresnet/avenue.pth
@@ -50,31 +107,39 @@ ShanghaiTech Campus        | [github][3] / [drive][6]
 [6]: https://drive.google.com/file/d/1SwUGiwyhEUPIk8CTSS_5ZDjg3Idi7CJS/view?usp=sharing
 
 
+To evaluate a pretrained `ASTNet` on a dataset, run:
 
-After preparing a dataset, you can test the dataset by running:
-    
-    python astnet.py \
-        --cfg /path/to/config/file \
-        --model-file /path/to/pre-trained/model \
-        GPUS [{GPU_index}]        
+```bash
+ python test.py \
+    --cfg <path/to/config/file> \
+    --model-file </path/to/pre-trained/model>
+```      
  
-## Datasets
-* <a href="http://www.svcl.ucsd.edu/projects/anomaly/dataset.html" target="_blank">UCSD Ped2</a>
-* <a href="http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html" target="_blank">CUHK Avenue</a>
-* <a href="https://svip-lab.github.io/dataset/campus_dataset.html" target="_blank">ShanghaiTech Campus</a>
+ For example, to evaluate `ASTNet` on Ped2:
 
-A dataset is a directory with the following structure:
+```bash
+python test.py \
+    --cfg config/ped2_wresmet.yaml \
+    --model-file pretrained.ped2.ptn
+```
 
-    dataset
-        ├── train
-        │   └── ${video_id}$
-        |       └──${frame_id}$.jpg
-        ├── test
-        │   └── ${video_id}$
-        |       └──${frame_id}$.jpg
-        └── $dataset$.mat
+## Training from scratch
+To train `ASTNet` on a dataset, run:
+```bash
+python train.py \
+    --cfg <path/to/config/file>
+```
+For example, to train `ASTNet` on Ped2:
 
- 
+```bash
+python train.py \
+    --cfg config/ped2_wresmet.yaml
+```
+
+**Notes**:
+- To change other options, see `<config/config_file.yaml>`.
+
+
 ## Citing
 If you find our work useful for your research, please consider citing:
 ```BibTeX

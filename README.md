@@ -51,7 +51,7 @@ A dataset is a directory with the following structure:
   │       │   ├── 00.jpg
   │       │   └── ...
   │       └── ...
-  └── testing
+  ├── testing
   │   └── frames
   │       ├── ${video_1}$
   │       │   ├── 000.jpg
@@ -74,7 +74,7 @@ A dataset is a directory with the following structure:
   │       │   ├── 00.jpg
   │       │   └── ...
   │       └── ...
-  └── testing
+  ├── testing
   │   └── frames
   │       ├── ${video_1}$
   │       │   ├── 000.jpg
@@ -143,12 +143,14 @@ python train.py \
 ## Citing
 If you find our work useful for your research, please consider citing:
 ```BibTeX
-@article{le2022attention,
+@article{le2023attention,
   title={Attention-based residual autoencoder for video anomaly detection},
   author={Le, Viet-Tuan and Kim, Yong-Guk},
   journal={Applied Intelligence},
-  pages={1--15},
-  year={2022},
+  volume={53},
+  number={3},
+  pages={3240--3254},
+  year={2023},
   publisher={Springer}
 }
 ```

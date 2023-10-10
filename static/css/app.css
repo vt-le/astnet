@@ -1,5 +1,5 @@
 .CodeMirror {
-    font-size: .8em;
+    font-size: 1.em;
     height: auto;
 }
 
@@ -25,3 +25,10 @@
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.thick {
+	font-weight: bold;
+  }

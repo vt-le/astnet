@@ -144,7 +144,7 @@ python train.py \
 If you find our work useful for your research, please consider citing:
 ```BibTeX
 @article{le2023attention,
-  title={Attention-based residual autoencoder for video anomaly detection},
+  title={Attention-based Residual Autoencoder for Video Anomaly Detection},
   author={Le, Viet-Tuan and Kim, Yong-Guk},
   journal={Applied Intelligence},
   volume={53},

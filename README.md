@@ -1,12 +1,6 @@
 # ASTNet: Attention-based Residual Autoencoder for Video Anomaly Detection
 
-<h5 align="center"> 
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvt-le%2Fastnet&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-
-</h5>
-
-This is the official implementation of **[Attention-based Residual Autoencoder for Video Anomaly Detection](https://doi.org/10.1007/s10489-022-03613-1)**.
+This is the official implementation of **[Attention-based Residual Autoencoder for Video Anomaly Detection](https://doi.org/10.1007/s10489-022-03613-1)** [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvt-le%2Fastnet&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com).
 
 
 ## Related works

@@ -163,7 +163,7 @@ If you find our work useful for your research, please consider citing:
 ## Contact
 For any question, please file an [issue](https://github.com/vt-le/astnet/issues) or contact:
 
-    Viet-Tuan Le: vt-le@outlook.com or tuan.lv@ou.edu.vn
+    Viet-Tuan Le: vt-le@outlook.com
 
 
 

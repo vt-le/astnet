@@ -124,7 +124,7 @@ To evaluate a pretrained `ASTNet` on a dataset, run:
 
 ```bash
 python test.py \
-    --cfg config/ped2_wresmet.yaml \
+    --cfg config/ped2_wresnet.yaml \
     --model-file pretrained.ped2.ptn
 ```
 
@@ -138,7 +138,7 @@ For example, to train `ASTNet` on Ped2:
 
 ```bash
 python train.py \
-    --cfg config/ped2_wresmet.yaml
+    --cfg config/ped2_wresnet.yaml
 ```
 
 **Notes**:

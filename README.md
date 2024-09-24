@@ -19,6 +19,10 @@ This is the official implementation of **[Attention-based Residual Autoencoder f
 * [5/25/2022] [ASTNet](https://vt-le.github.io/astnet/) is available online.
 * [4/21/2022] Code of [ASTNet](https://vt-le.github.io/astnet/) is released!
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=vt-le/astnet&type=Date)](https://star-history.com/#vt-le/astnet&Date)
+
 ## Prerequisites
   * Linux or macOS
   * Python 3

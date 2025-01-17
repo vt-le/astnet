@@ -8,7 +8,7 @@ This is the official implementation of **[Attention-based Residual Autoencoder f
 > **HSTforU**: See [HSTforU: Anomaly Detection in Aerial and Ground-based Videos with Hierarchical Spatio-Temporal Transformer for U-net
 ](https://vt-le.github.io/HSTforU/).
 
-> **MoGuP**: See [MoGuP:Motion-guided Prediction for Video Anomaly Detection](https://moguprediction.github.io/).
+> **CrossAnomaly**: See [CrossAnomaly: A Contextual Cross-Modality Framework for Video Anomaly Detection](https://github.com/vt-le/CrossAnomaly).
 
 ### [Project](https://vt-le.github.io/astnet/) | [Video](https://youtu.be/XOzXwKVKX-Y) | [Paper](http://dx.doi.org/10.1007/s10489-022-03613-1)
   
